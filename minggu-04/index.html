@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form: Input</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <form action="main.php" method="post" name="formMahasiswa" class="form">
+            <table class="form__table">
+                <tr>
+                    <td class="form__label">NIM: </td>
+                    <td><input type="number" name="form-nim" class="form__input form__input--number" required></td>
+                </tr>
+                <tr>
+                    <td class="form__label">Nama: </td>
+                    <td><input type="text" name="form-name" class="form__input form__input--text" required></td>
+                </tr>
+                <tr>
+                    <td class="form__label">Tanggal Lahir: </td>
+                    <td><input type="date" name="form-date" class="form__input form__input--date" required></td>
+                </tr>
+                <tr>
+                    <td class="form__label">Program Studi: </td>
+                    <td>
+                        <select name="form-prodi" class="form__select">
+                            <option value="teknikInformatika" class="form__select--option">S1 - Teknik Informatika</option>
+                            <option value="sistemInformasi" class="form__select--option">S1 - Sistem Informasi</option>
+                            <option value="ilmuKomunikasi" class="form__select--option">S1 - Ilmu Komunikasi</option>
+                            <option value="teknikInformatikaDiploma" class="form__select--option">D4 - Teknik Informatika</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="form__label">Bidang Minat: </td>
+                    <td>
+                        <input type="checkbox" name="form-bidang-1" value="1" class="form__input form__input--checkbox">
+                        <label>Web Programming</label><br>
+
+                        <input type="checkbox" name="form-bidang-2" value="2" class="form__input form__input--checkbox">
+                        <label>Mobile Programming</label><br>      
+
+                        <input type="checkbox" name="form-bidang-3" value="3" class="form__input form__input--checkbox">
+                        <label>Data Science</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Berkas File: </td>
+                    <td><input type="file" name="form-berkas" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="form-submit" value="kirim">
+                        <input type="hidden" name="form-hidden" value="rahasia">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- <label for="firstName">First Name: </label><br>
+            <input type="text" name="firstname" id="firstname"><br>
+    
+            <label for="lastName">Last Name: </label><br>   
+            <input type="text" name="lastname" id="lastName"><br>
+
+            <label for="radioButton">Gender: </label><br>   
+            <input type="radio" name="radiobutton" id="radioButton">
+            <label for="maleGender">Male</label>
+            <input type="radio" name="radiobutton" id="radioButton">
+            <label for="femaleGender">Female</label> -->
+        </form>
+    </div>
+
+</body>
+</html>
