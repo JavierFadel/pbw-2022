@@ -1,0 +1,97 @@
+/* GLOBAL CLASSES. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper-margin-x { margin: 3rem 0; }
+.wrapper-margin-y { margin: 0 15vw; }
+
+.text__head { margin-bottom: .7rem; }
+.text__head-logo { margin-bottom: 0;}
+.text__desc { margin-bottom: .5rem; }
+.text__foot { font-size: 1.5rem; }
+
+.text__head-hero {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: cornsilk;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.navbar__link {
+    margin-right: 1rem;
+}
+
+.article {
+    display: grid;
+    grid-template-areas: 
+        "hero hero title";
+
+    height: 70vh;
+    background-color: lightsalmon;
+}
+
+.article__image {
+    /* grid-area: header; */
+    height: inherit;
+}
+
+.article__title {
+    /* grid-area: title; */
+    padding: 2rem;
+    color: #333;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; 
+    align-items: center;
+
+    background-color: cornsilk;
+    color: #333;
+    padding: 2rem 0; 
+}
+
+.navbar-x {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.navbar__link-x {
+    padding: .2rem 0;
+} 
+
+.navbar__link-x:hover {
+    cursor: pointer; 
+    text-decoration: underline;
+}
