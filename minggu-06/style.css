@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav {
+  width: 100%;
+  height: 10vh;
+  background-color: powderblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-links__items {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
