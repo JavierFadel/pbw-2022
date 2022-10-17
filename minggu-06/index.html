@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minggu-06 - Navbar</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minggu - 06 | Navbar</title>
 
     <!-- LINKS -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
-    <nav class="nav">
-        <div class="logo">Udinus</div>
+    <header class="head">
+        <h2 class="head-title" id="headLogo">Header</h2>
+        <nav class="navbar">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="about.html" class="navbar__link">About</a>
+            <a href="contact.html" class="navbar__link">Contact</a>
+        </nav>
+    </header>
 
-        <div class="nav-links">
-            <a href="#" class="nav-links__items">Home</a>
-            <a href="#" class="nav-links__items">About</a>
-            <a href="#" class="nav-links__items">Contact</a>
-            <a href="#" class="nav-links__items">Gallery</a>
-            <a href="#" class="nav-links__items">Search</a>
-        </div>
-    </nav>
+    <div class="grid">
+        <section class="side-bar">
+            <a href="#" class="side-bar_links">Home</a>
+            <a href="pages/about.html" class="side-bar_links">About Me</a>
+            <a href="pages/contact.html" class="side-bar_links">Contact</a>
+        </section>
 
+        <article class="article">
+            <h1 class="article-head">Judul Artikel</h1>
+            <p class="article-p">Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color
+                amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem
+                ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do
+                site color amet Lorem ipsum do site color amet Lorem ipsum do site color amet.</p>
+            <p class="article-p">Lorem ipsum do site color amet Lorem ipsum do site color amet Lorem ipsum do site color
+                amet Lorem ipsum do site color amet Lorem ipsum do site color amet </p>
+        </article>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-head">Footer</div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
