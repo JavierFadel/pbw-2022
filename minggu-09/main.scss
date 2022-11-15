@@ -1,0 +1,77 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 50vh;
+    width: 50vh;
+
+    display: grid;
+    grid-template-areas: "title title title nav nav nav"
+        "post post post post post side"
+        "media main main main main side"
+        "media main main main main ads"
+        "media image image image image ads"
+        "media image image image image others"
+        "media image image image image others"
+        "footer footer footer footer footer footer";
+    gap: 5px;
+}
+
+.item--1 {
+    grid-area: title;
+    background-color: gold;
+}
+
+.item--2 {
+    grid-area: nav;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    & .nav {
+        background-color: antiquewhite;
+    }
+}
+
+.item--3 {
+    grid-area: post;
+    background-color: lightblue;
+}
+
+.item--4 {
+    grid-area: side;
+    background-color: goldenrod;
+}
+
+.item--5 {
+    grid-area: media;
+    background-color: lightgreen;
+}
+
+.item--6 {
+    grid-area: main;
+    background-color: gainsboro;
+}
+
+.item--7 {
+    grid-area: ads;
+    background-color: forestgreen;
+}
+
+.item--8 {
+    grid-area: image;
+    background-color: yellow;
+}
+
+.item--9 {
+    grid-area: others;
+    background-color: palevioletred
+}
+
+.item--10 {
+    grid-area: footer;
+    background-color: tan;
+}
