@@ -17,6 +17,10 @@ const updateData = function() {
             <td class="table-body__row-item">
                 ${name}
             </td>
+            <td class="table-body__row-item">
+                <button id="#uploadButton" class="btn btn--upload">Upload</button>
+                <button id="#deleteButton" class="btn btn--delete">Delete</button>
+            </td>
         </tr>`
         size.innerHTML = names.length
     }
@@ -36,6 +40,10 @@ form.addEventListener('submit', () => {
                 <td class="table-body__row-item">
                     ${inputName.value}
                 </td>
+                <td class="table-body__row-item">
+                    <button id="#deleteButton" class="btn btn--upload">Upload</button>
+                    <button id="#deleteButton" class="btn btn--delete">Delete</button>
+                </td>
             </tr>`
 
             size.innerHTML = names.length
@@ -49,3 +57,8 @@ form.addEventListener('submit', () => {
 
 // If the name is more than 10, switch to a link that can load more.
 
+// const deleteData = () => {
+
+// }
+
+let btn = document.getElementsByClassName('btn--delete')

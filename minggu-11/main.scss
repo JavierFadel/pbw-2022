@@ -129,6 +129,30 @@ body {
     }
 }
 
+.btn {
+    width: 5rem;
+    height: 2rem;
+    background-color: rgba($color: #f2f2f2, $alpha: 0);
+    color: #f2f2f2;
+    font-weight: 700;
+
+    cursor: pointer;
+    margin-right: .2rem;
+
+    border: none;
+    border-radius: .2rem;
+    outline: 1px solid #f2f2f2;
+    transition: all .2s;
+
+    &:hover {
+        background-color: rgba($color: #f2f2f2, $alpha: .3);
+    }
+
+    &:active {
+        background-color: rgba($color: #f2f2f2, $alpha: .6);
+    }
+}
+
 @media (max-width: 800px) {
     .head {
         text-align: center;
