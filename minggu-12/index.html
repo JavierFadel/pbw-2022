@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
-    <title>Minggu - 12</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mahasiswa</title>
 </head>
 <body>
-    
+
+    <video src="assets/bg-video-01.mp4" class="bg-video" autoplay loop playsinline muted></video>
+
     <div class="container">
-        <div id="text">
-            Test Text
-        </div>
+        <h2 class="head">Data Nama Mahasiswa</h2>
+        <div class="size">Terdapat <span id="sizeNumber">3</span> Mahasiswa.</div>
+        <form action="javascript:void(0)" method="post" id="inputForm" class="form">
+            <input type="text" name="name" id="inputName" class="form-input" placeholder="Input name" required>
+            <input type="submit" value="+" id="inputSubmit" class="form-submit">
+        </form>
+        <table class="table">
+            <thead class="table-head">
+                <tr class="table-head__row">
+                    <td class="table-head__row-item">No.</td>
+                    <td class="table-head__row-item">Daftar Nama</td>
+                </tr>
+            </thead>
+            <tbody id="tableMahasiswa" class="table-body"></tbody>
+        </table>
     </div>
-    
+
 <script src="app.js"></script>
 </body>
 </html>

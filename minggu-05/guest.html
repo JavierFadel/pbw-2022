@@ -25,15 +25,20 @@
     <article class="article">
         <img src="src/udinus.jpg" alt="desert image" class="article__image">
         <div class="article__title">
-            <h1 class="text__head text__head-hero">Dinus Student's Blog</h1>
+            <h1 class="text__head text__head-hero">Buku Tamu</h1>
             <p class="text__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aliquid officiis exercitationem! Maiores, dolore. Molestiae ipsa fuga atque impedit possimus doloremque tenetur deserunt, porro reprehenderit veritatis vitae ad modi. Quos!</p>
-            <h1 class="text__head text__head-hero">Daftar Materi Terfavorit</h1>
-            <ol class="text__list">
-                <li class="text__list--item">Kalkulus</li>
-                <li class="text__list--item">Dasar Pemrograman</li>
-                <li class="text__list--item">Matematika Diskrit</li>
-                <li class="text__list--item">Dasar-dasar Komputasi</li>
-            </ol>
+            <form action="#" class="article__form">
+                <label for="inputText">Nama Lengkap</label>
+                <input type="text" name="inputText" id="inputText">
+
+                <div class="article__form--radio_group">
+                    <input type="radio" name="inputRadioLaki" id="inputRadioLaki">
+                    <label for="inputRadioLaki">Laki-laki</label>
+
+                    <input type="radio" name="inputRadioPerempuan" id="inputRadioPerempuan">
+                    <label for="inputRadioPerempuan">Perempuan</label>
+                </div>
+            </form>
         </div>
     </article>
 

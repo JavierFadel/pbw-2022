@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+input, label { margin-bottom: .5rem; }
+
 .wrapper-center {
     position: absolute;
     top: 50%;
@@ -84,6 +86,16 @@
     /* grid-area: title; */
     padding: 2rem;
     color: #333;
+}
+
+.article__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__form--radio_group {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .carousel {
