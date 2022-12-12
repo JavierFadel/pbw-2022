@@ -6,6 +6,7 @@ let container = document.querySelector('.container'),
     size = document.getElementById('sizeNumber'),
     isMore = false
 
+// Arrays of name.
 let names = ['ben', 'tom', 'jenner']
 const updateData = function() {
     for (let [i, name] of names.entries()) {
