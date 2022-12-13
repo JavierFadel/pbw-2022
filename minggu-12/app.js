@@ -1,3 +1,4 @@
+// Setting the global variables 🌍. 
 let container = document.querySelector('.container'),
     form = document.getElementById('inputForm'),
     inputName = document.getElementById('inputName'),
@@ -6,7 +7,11 @@ let container = document.querySelector('.container'),
     size = document.getElementById('sizeNumber'),
     isMore = false
 
+// Array for storing names, a mini database.. sort of.
 let names = ['ben', 'tom', 'jenner']
+
+// Function for updating data everytime new data is inputted.
+// FIXME: the numbering is not dynamic and this function is executed only once.
 const updateData = function() {
     for (let [i, name] of names.entries()) {
         table.innerHTML +=
@@ -29,6 +34,8 @@ const updateData = function() {
 // TODO: this function will stack a new array to another.
 updateData();   
 
+// Adding listener to submit button.
+// This code is still kinda messy.
 form.addEventListener('submit', () => {
     names.push(inputName.value)
     if (names.length <= 10) {
@@ -64,6 +71,8 @@ form.addEventListener('submit', () => {
     // })
 // Done ✅.
 
+// Attaching a listener to every single delete button via querySelectorAll.
+// This block will including a function do delete a current row where the button is clicked.
 const deleteButton = document.querySelectorAll('.btn--delete')
 deleteButton.forEach((btn) => {
     btn.addEventListener('click', (el) => {
@@ -102,6 +111,8 @@ deleteButton.forEach((btn) => {
     })
 })
 
+// Attaching a listener to every single update button via querySelectorAll.
+// This block will including a function do update a current row where the button is clicked.
 const updateButton = document.querySelectorAll('.btn--update')
 updateButton.forEach((btn) => {
     btn.addEventListener('click', (el) => {
